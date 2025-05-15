@@ -1,0 +1,109 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f0f2f5, #e0e7ff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+#high-score {
+    background-color: #fffbe6;
+    padding: 8px 16px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 2px solid #ffd700;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-gap: 25px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.container .btn {
+    width: 200px;
+    height: 200px;
+    border: 6px solid black;
+    border-radius: 20%;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    user-select: none;
+}
+
+.container .btn:active {
+    transform: scale(0.95);
+}
+
+.red {
+    background-color: #e74c3c;
+}
+
+.green {
+    background-color: #2ecc71;
+}
+
+.blue {
+    background-color: #3498db;
+}
+
+.orange {
+    background-color: #f39c12;
+}
+
+.flash {
+    background-color: white !important;
+    color: black;
+}
+
+/* Game over background */
+.game-over {
+    background-color: #ff4d4d !important;
+}
+
+/* Responsive: Mobile adjustments */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 150px 150px;
+        grid-gap: 20px;
+    }
+
+    .container .btn {
+        width: 150px;
+        height: 150px;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3, #high-score {
+        font-size: 1rem;
+    }
+}
